@@ -38,6 +38,7 @@ def stars(html):
     for star_num in star_span:
         if "itemprop" not in star_num.attrs:
             # star=re.findall('\d+',star_num)
+            
             star = star_num.attrs['class'][1][-2:]
             print(star)
             stars.append(star)
